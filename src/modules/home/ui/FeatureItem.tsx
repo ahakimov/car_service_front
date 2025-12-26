@@ -8,7 +8,7 @@ export default function FeatureItem({
 }) {
     return (
         <div className="flex items-start gap-4">
-            <div className="w-20 h-20 bg-[#333E75] rounded flex items-center justify-center flex-shrink-0 mt-1">
+            <div className="w-20 h-20 bg-[var(--primary-900)] rounded flex items-center justify-center flex-shrink-0 mt-1">
                 <Image src="/thumbs-up.png" width={40} height={40} alt="thumbs-up" />
             </div>
 

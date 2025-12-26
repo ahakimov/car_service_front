@@ -1,30 +1,83 @@
 @import "tailwindcss";
 
 :root {
-  /* Car Repair Design System Colors */
-  --primary-50: #f2f5fc;
-  --primary-100: #e2e9f7;
-  --primary-200: #cbd8f2;
-  --primary-500: #5f80d2;
-  --primary-600: #4a65c4;
-  --primary-700: #4154b4;
-  --primary-800: #3a4793;
-  --primary-950: #232848;
+    /* =========================
+       🔵 PRIMARY — Blue
+       ========================= */
+    --primary-50:  #f2f5fc;
+    --primary-100: #e2e9f7;
+    --primary-200: #cbd8f2;
+    --primary-300: #a8c0e8;
+    --primary-400: #7e9fdc;
+    --primary-500: #5f80d2;
+    --primary-600: #4a65c4;
+    --primary-700: #4154b4;
+    --primary-800: #3a4793;
+    --primary-900: #333e75;
+    --primary-950: #232848;
 
-  --accent-50: #fff3ed;
-  --accent-200: #ffc4a8;
-  --accent-400: #ff6537;
-  --accent-600: #f02206;
-  --accent-700: #c71407;
-  --accent-800: #9e120e;
+    /* =========================
+       🔴 DANGER — Red
+       ========================= */
+    --danger-50:  #fef3f2;
+    --danger-100: #fee4e2;
+    --danger-200: #fecdca;
+    --danger-300: #fdaaa4;
+    --danger-400: #f97970;
+    --danger-500: #f04438;
+    --danger-600: #de3024;
+    --danger-700: #bb241a;
+    --danger-800: #9a221a;
+    --danger-900: #80231c;
+    --danger-950: #460d09;
 
-  --gray-neutral-50: #f5f7f8;
-  --gray-neutral-400: #b2bbc7;
-  --gray-neutral-600: #878fa4;
-  --gray-neutral-950: #2f3237;
+    /* =========================
+       🟢 SUCCESS — Green
+       ========================= */
+    --success-50:  #f1fcf3;
+    --success-100: #defae4;
+    --success-200: #bef4cc;
+    --success-300: #8beaa4;
+    --success-400: #51d776;
+    --success-500: #2ed15b;
+    --success-600: #1d9c40;
+    --success-700: #1a7b35;
+    --success-800: #1a612e;
+    --success-900: #175029;
+    --success-950: #072c13;
+
+    /* =========================
+       🟠 ACCENT — Orange
+       ========================= */
+    --accent-50:  #fff3ed;
+    --accent-100: #ffe3d4;
+    --accent-200: #ffcca8;
+    --accent-300: #ff9a70;
+    --accent-400: #ff6537;
+    --accent-500: #ff4d24;
+    --accent-600: #f02206;
+    --accent-700: #c71407;
+    --accent-800: #9e120e;
+    --accent-900: #7f130f;
+    --accent-950: #450505;
+
+    /* =========================
+       ⚫ NEUTRAL — Gray
+       ========================= */
+    --neutral-50:  #f5f7f8;
+    --neutral-100: #edf0f2;
+    --neutral-200: #dee3e7;
+    --neutral-300: #c9d0d8;
+    --neutral-400: #b2bbc7;
+    --neutral-500: #98a2b3;
+    --neutral-600: #878fa4;
+    --neutral-700: #747b8e;
+    --neutral-800: #5f6574;
+    --neutral-900: #50545f;
+    --neutral-950: #2f3237;
 
   /* Default theme colors for compatibility */
-  --background: #f2f5fc;
+  --background: --primary-50;
   --foreground: #2f3237;
 }
 
