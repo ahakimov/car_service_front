@@ -1,5 +1,5 @@
-import Header from "./Header";
-import ContactForm from "./ContactForm";
+import Header from "../../layout/Header";
+import ContactForm from "../../../components/ContactForm";
 import Image from "next/image";
 
 export default function Hero() {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import FeatureItem from "@/components/FeatureItem";
+import FeatureItem from "@/modules/home/ui/FeatureItem";
 
 export default function WhyChoiceUs() {
     return (

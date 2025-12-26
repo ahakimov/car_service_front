@@ -1,9 +1,9 @@
-import Hero from "@/components/Hero";
+import Hero from "@/modules/home/ui/Hero";
 import Link from "next/link";
 import Image from "next/image";
-import Footer from "@/components/Footer";
-import Partnership from "@/components/Partnership";
-import WhyChoiceUs from "@/components/WhyChoiceUs";
+import Footer from "@/modules/layout/Footer";
+import Partnership from "@/modules/home/ui/Partnership";
+import WhyChoiceUs from "@/modules/home/ui/WhyChoiceUs";
 
 export default function Home() {
   return (
