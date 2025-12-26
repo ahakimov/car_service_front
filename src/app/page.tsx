@@ -4,6 +4,7 @@ import Image from "next/image";
 import Footer from "@/modules/layout/Footer";
 import Partnership from "@/modules/home/ui/Partnership";
 import WhyChoiceUs from "@/modules/home/ui/WhyChoiceUs";
+import OurServices from "@/modules/home/ui/OurServices";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
         <Hero />
         <Partnership />
         <WhyChoiceUs />
-
+        <OurServices />
         <Footer />
       </main>
   );
