@@ -6,6 +6,7 @@ import Partnership from "@/modules/home/ui/Partnership";
 import WhyChoiceUs from "@/modules/home/ui/WhyChoiceUs";
 import OurServices from "@/modules/home/ui/OurServices";
 import LatestPhotos from "@/modules/home/ui/LatestPhotos";
+import {SimpleRepairProcess} from "@/modules/home/ui/SimpleRepairProcess";
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
         <Partnership />
         <WhyChoiceUs />
         <OurServices />
-          <LatestPhotos  />
+        <LatestPhotos  />
+        <SimpleRepairProcess />
         <Footer />
       </main>
   );
