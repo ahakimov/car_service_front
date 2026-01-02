@@ -126,8 +126,9 @@ const LocationTabs: React.FC = () => {
     }, [activeTab]);
 
     return (
-        <section className="w-full px-4 sm:px-8 lg:px-28 py-16 lg:py-20" style={{ backgroundColor: 'var(--primary-50)' }}>
-            <div className="flex flex-col gap-8 lg:gap-12">
+        <section className="w-full py-16 lg:py-20" style={{ backgroundColor: 'var(--primary-50)' }}>
+            <div className="max-w-screen-xl mx-auto px-8 lg:px-20">
+                <div className="flex flex-col gap-8 lg:gap-12">
                 {/* Header */}
                 <div className="flex flex-col">
                     <h2
@@ -338,6 +339,7 @@ const LocationTabs: React.FC = () => {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     );
