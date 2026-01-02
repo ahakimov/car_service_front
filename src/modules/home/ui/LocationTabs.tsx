@@ -252,23 +252,12 @@ const LocationTabs: React.FC = () => {
                                     ? 'rounded-tl rounded-tr'
                                     : ''
                                 }
-                  transition-colors duration-200 cursor-pointer
+                  transition-colors duration-200 hover:bg-[var(--primary-50)] cursor-pointer
                 `}
                                 style={{
                                     backgroundColor: activeTab === index ? 'var(--primary-100)' : 'var(--primary-50)',
                                 }}
-                                onMouseEnter={(e) => {
-                                    if (activeTab !== index) {
-                                        e.currentTarget.style.backgroundColor = 'var(--primary-100)';
-                                        e.currentTarget.style.opacity = '0.5';
-                                    }
-                                }}
-                                onMouseLeave={(e) => {
-                                    if (activeTab !== index) {
-                                        e.currentTarget.style.backgroundColor = 'var(--primary-50)';
-                                        e.currentTarget.style.opacity = '1';
-                                    }
-                                }}
+
                             >
                                 <p
                                     className="font-unbounded font-normal text-[25px] leading-10 uppercase text-left whitespace-nowrap mb-0"
