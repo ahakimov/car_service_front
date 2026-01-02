@@ -7,6 +7,7 @@ import WhyChoiceUs from "@/modules/home/ui/WhyChoiceUs";
 import OurServices from "@/modules/home/ui/OurServices";
 import LatestPhotos from "@/modules/home/ui/LatestPhotos";
 import {SimpleRepairProcess} from "@/modules/home/ui/SimpleRepairProcess";
+import {RedCarSection} from "@/modules/home/ui/RedCarSection";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <OurServices />
         <LatestPhotos  />
         <SimpleRepairProcess />
+        <RedCarSection />
         <Footer />
       </main>
   );
