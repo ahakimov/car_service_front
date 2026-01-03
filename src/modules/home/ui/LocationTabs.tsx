@@ -252,12 +252,11 @@ const LocationTabs: React.FC = () => {
                                     ? 'rounded-tl rounded-tr'
                                     : ''
                                 }
-                  transition-colors duration-200 hover:bg-[var(--primary-50)] cursor-pointer
+                  transition-colors duration-200 hover:bg-[var(--accent-neutral-50)] cursor-pointer
                 `}
                                 style={{
-                                    backgroundColor: activeTab === index ? 'var(--primary-100)' : 'var(--primary-50)',
+                                    backgroundColor: activeTab === index ? 'var(--primary-100)' : 'var(--accent-neutral-50)',
                                 }}
-
                             >
                                 <p
                                     className="font-unbounded font-normal text-[25px] leading-10 uppercase text-left whitespace-nowrap mb-0"

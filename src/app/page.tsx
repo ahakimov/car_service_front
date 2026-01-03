@@ -8,6 +8,7 @@ import {SimpleRepairProcess} from "@/modules/home/ui/SimpleRepairProcess";
 import {RedCarSection} from "@/modules/home/ui/RedCarSection";
 import {Team} from "@/modules/home/ui/Team";
 import LocationTabs from "@/modules/home/ui/LocationTabs";
+import ContactForm from "@/modules/home/ui/ContactForm";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <RedCarSection />
         <Team />
         <LocationTabs />
+          <ContactForm />
         <Footer />
       </main>
   );
