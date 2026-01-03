@@ -1,12 +1,13 @@
 import Image from "next/image";
+import Container from "@/modules/layout/Container";
 
 export default function Partnership() {
     return (
         <section
-            className="w-full py-24"
+            className="w-full py-16 lg:py-20"
             style={{ backgroundColor: "var(--primary-50)" }}
         >
-            <div className="max-w-[1440px] mx-auto px-8 lg:px-20">
+            <Container>
                 <div className="flex flex-col items-center gap-8">
                     <p
                         className="text-center text-base font-medium leading-6"
@@ -52,7 +53,7 @@ export default function Partnership() {
                         />
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

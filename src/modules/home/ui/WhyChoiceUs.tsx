@@ -1,10 +1,11 @@
 import Image from "next/image";
 import FeatureItem from "@/modules/home/ui/FeatureItem";
+import Container from "@/modules/layout/Container";
 
 export default function WhyChoiceUs() {
     return (
-        <section className="w-full py-20 lg:py-24 bg-[var(--primary-950)]">
-            <div className="max-w-[1440px] mx-auto px-8 lg:px-20">
+        <section className="w-full py-16 lg:py-20 bg-[var(--primary-950)]">
+            <Container>
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
                     {/* LEFT IMAGE */}
                     <div className="flex-1">
@@ -53,7 +54,7 @@ export default function WhyChoiceUs() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     );
 }

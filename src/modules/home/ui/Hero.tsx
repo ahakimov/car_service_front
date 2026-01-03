@@ -1,4 +1,3 @@
-import Header from "../../layout/Header";
 import ContactForm from "../../../components/ContactForm";
 import Image from "next/image";
 
@@ -17,8 +16,7 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-[var(--neutral-950)]/30"></div>
             </div>
 
-            <Header />
-
+            {/* Content */}
             <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 lg:px-20 pt-24">
                 <div className="flex flex-col lg:flex-row items-start justify-between gap-8 lg:gap-16">
                     <div className="flex-1 pt-16 lg:pt-32">

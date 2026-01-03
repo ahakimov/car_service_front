@@ -9,22 +9,24 @@ import {RedCarSection} from "@/modules/home/ui/RedCarSection";
 import {Team} from "@/modules/home/ui/Team";
 import LocationTabs from "@/modules/home/ui/LocationTabs";
 import ContactForm from "@/modules/home/ui/ContactForm";
+import Header from "@/modules/layout/Header";
 
 export default function Home() {
   return (
       <main className="min-h-screen">
-        {/* Hero Section */}
-        <Hero />
-        <Partnership />
-        <WhyChoiceUs />
-        <OurServices />
-        <LatestPhotos  />
-        <SimpleRepairProcess />
-        <RedCarSection />
-        <Team />
-        <LocationTabs />
+          <Header />
+          {/* Hero Section */}
+          <Hero />
+          <Partnership />
+          <WhyChoiceUs />
+          <OurServices />
+          <LatestPhotos  />
+          <SimpleRepairProcess />
+          <RedCarSection />
+          <Team />
+          <LocationTabs />
           <ContactForm />
-        <Footer />
+          <Footer />
       </main>
   );
 }

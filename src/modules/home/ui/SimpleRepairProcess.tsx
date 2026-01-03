@@ -1,12 +1,13 @@
 import {ArrowDownIcon} from "lucide-react";
 import {ContactButton} from "@/modules/home/ui/ContactButton";
+import Container from "@/modules/layout/Container";
 
 export const SimpleRepairProcess = () => {
     return (
         <section
             className={"w-full py-16 lg:py-20 bg-[var(--primary-50)]"}
         >
-            <div className="max-w-screen-xl mx-auto px-8 lg:px-20">
+            <Container>
                 <div className="flex flex-col gap-16">
                     <div className="max-w-2xl">
                         <div className="space-y-4">
@@ -53,7 +54,7 @@ export const SimpleRepairProcess = () => {
                         />
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     );
 };

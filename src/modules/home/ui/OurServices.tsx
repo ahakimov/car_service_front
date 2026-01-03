@@ -1,10 +1,11 @@
 import { services } from "../mapper";
 import Link from "next/link";
+import Container from "@/modules/layout/Container";
 
 export default function OurServices() {
     return (
-        <section className="py-24 bg-[var(--primary-50)]">
-            <div className="mx-auto max-w-7xl px-6">
+        <section className="w-full py-16 lg:py-20 bg-[var(--primary-50)]">
+            <Container>
                 {/* Title */}
                 <h2 className="mb-16 text-center font-unbounded text-5xl font-bold tracking-tight text-[var(--primary-800)]">
                     OUR SERVICES
@@ -66,7 +67,7 @@ export default function OurServices() {
                         </ul>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     );
 }

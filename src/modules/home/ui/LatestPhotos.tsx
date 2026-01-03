@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Container from "@/modules/layout/Container";
 
 export default function LatestPhotos() {
     return (
@@ -6,7 +7,7 @@ export default function LatestPhotos() {
             className="w-full py-16 lg:py-20"
             style={{ backgroundColor: "var(--primary-50)" }}
         >
-            <div className="mx-auto max-w-screen-xl px-8 lg:px-20">
+            <Container>
                 <div className="flex flex-col items-center gap-16">
                     <h2
                         className="text-center font-unbounded text-4xl lg:text-6xl xl:text-7xl font-semibold uppercase"
@@ -54,7 +55,7 @@ export default function LatestPhotos() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     );
 }

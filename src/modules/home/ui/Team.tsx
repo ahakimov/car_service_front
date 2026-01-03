@@ -1,13 +1,14 @@
 import Image from "next/image";
 import {ContactButton} from "@/modules/home/ui/ContactButton";
 import TeamMember from "@/modules/home/ui/TeamMember";
+import Container from "@/modules/layout/Container";
 
 export function Team() {
     return (
         <section
             className="w-full py-16 lg:py-20 bg-[var(--primary-100)]"
         >
-            <div className="max-w-screen-xl mx-auto px-8 lg:px-20">
+            <Container>
                 <div className="flex flex-col gap-12">
                     <div className="space-y-4">
                         <p
@@ -58,7 +59,7 @@ export function Team() {
                         />
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     );
 }

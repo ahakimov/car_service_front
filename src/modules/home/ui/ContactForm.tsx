@@ -21,6 +21,7 @@ import {
 } from '@/components/ui/dialog';
 import { Textarea } from '@/components/ui/textarea';
 import CustomDatePicker from '@/components/CustomDatePicker';
+import Container from "@/modules/layout/Container";
 
 const ContactFormWithCustomDatePicker: React.FC = () => {
     const [date, setDate] = useState<Date>();
@@ -61,12 +62,13 @@ const ContactFormWithCustomDatePicker: React.FC = () => {
 
     return (
         <section
-            className="w-full px-4 sm:px-8 lg:px-28 py-16 lg:py-20"
+            className="w-full py-16 lg:py-20"
             style={{ backgroundColor: 'var(--primary-50)' }}
         >
-            <div className="flex flex-col lg:flex-row items-start justify-between gap-8 lg:gap-12">
+            <Container>
+                <div className="flex flex-col lg:flex-row items-start justify-between gap-8 lg:gap-12">
                 {/* Left Side - Contact Info */}
-                <div className="flex flex-col gap-8 w-full lg:w-[416px]">
+                <div className="flex flex-col gap-8 w-full lg:w-1/3">
                     {/* Header */}
                     <div className="flex flex-col gap-1 w-full">
                         <p
@@ -93,7 +95,7 @@ const ContactFormWithCustomDatePicker: React.FC = () => {
                     </div>
 
                     {/* Contact Info Cards */}
-                    <div className="flex flex-col gap-1 w-full">
+                    <div className="flex flex-col gap-6 w-full">
                         {/* Phone */}
                         <div className="flex gap-4 items-center">
                             <div
@@ -146,7 +148,7 @@ const ContactFormWithCustomDatePicker: React.FC = () => {
 
                 {/* Right Side - Form */}
                 <div
-                    className="w-full lg:w-[728px] rounded-lg p-8 flex flex-col gap-4"
+                    className="w-full lg:w-8/12 rounded-lg p-8 flex flex-col gap-4"
                     style={{ backgroundColor: 'var(--primary-100)' }}
                 >
                     <h3
@@ -375,7 +377,7 @@ const ContactFormWithCustomDatePicker: React.FC = () => {
                     </form>
                 </div>
             </div>
-
+            </Container>
             {/* Success Dialog */}
             <Dialog open={showSuccessDialog} onOpenChange={setShowSuccessDialog}>
                 <DialogContent className="sm:max-w-md">
