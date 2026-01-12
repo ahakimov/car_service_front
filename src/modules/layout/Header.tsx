@@ -57,9 +57,9 @@ export default function Header() {
                         <button className="flex items-center justify-center px-3 py-2.5 rounded-lg text-gray-50 hover:bg-white/10 transition-colors text-sm lg:text-base">
                             Track your status
                         </button>
-                        <button className="flex items-center justify-center px-3 py-2.5 rounded-lg text-gray-50 hover:bg-white/10 transition-colors text-sm lg:text-base min-w-[124px]">
+                        <Link href={"/login"} className="flex items-center justify-center px-3 py-2.5 rounded-lg text-gray-50 hover:bg-white/10 transition-colors text-sm lg:text-base min-w-[124px]">
                             Log in
-                        </button>
+                        </Link>
                         <button
                             className="flex items-center justify-center px-4 py-2.5 rounded-lg border transition-colors text-sm lg:text-base min-w-[124px] shadow-sm hover:opacity-90"
                             style={{
