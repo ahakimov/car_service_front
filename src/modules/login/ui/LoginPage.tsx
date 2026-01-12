@@ -13,11 +13,16 @@ import {
     Alert,
     AlertDescription,
 } from '@/components/ui/alert';
-import { useAuth } from '@/app/api';
+import {API_CONFIG, useApi, useAuth} from '@/app/api';
 
 export default function LoginPage() {
     const router = useRouter();
     const { login, loading: authLoading } = useAuth();
+    const { data, loading, post, setToken, removeToken, hasToken } =
+        useApi<{
+            userId: number;
+            username: string;
+        }>();
 
     const [showPassword, setShowPassword] = useState(false);
     const [rememberMe, setRememberMe] = useState(false);
@@ -73,20 +78,24 @@ export default function LoginPage() {
         if (!validateForm()) {
             return;
         }
-
+        const credentials = {
+            email: formData.email,
+            password: formData.password,
+        };
         try {
             // Use the auth service to login
-            const response = await login(formData.email, formData.password);
-
-            if (response.error) {
+            //const response = await login(formData.email, formData.password);
+            const result = await post(API_CONFIG.ENDPOINTS.AUTH.LOGIN, credentials);
+            console.log('Login response:', result);
+            if (result.error) {
                 // Handle authentication error
-                setError(response.error);
+                setError(result.error);
                 return;
             }
 
             // Login successful
-            if (response.data) {
-                console.log('Login successful:', response.data);
+            if (result.data) {
+                console.log('Login successful:', result.data);
 
                 // Redirect to dashboard or home
                 router.push('/dashboard');
