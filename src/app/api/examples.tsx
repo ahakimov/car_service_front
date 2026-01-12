@@ -101,7 +101,7 @@ export function ExampleCreateMechanic() {
 }
 
 /**
- * Example: PUT - Update a client
+ * Example: PUT - Update a dashboard
  */
 export function ExampleUpdateClient() {
   const { data, loading, error, put } = useApi<Client>();
@@ -120,7 +120,7 @@ export function ExampleUpdateClient() {
     );
 
     if (result.error) {
-      console.error("Failed to update client:", result.error);
+      console.error("Failed to update dashboard:", result.error);
     } else {
       console.log("Client updated:", result.data);
     }

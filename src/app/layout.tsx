@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Unbounded } from "next/font/google";
 import "./globals.css";
+import {AuthProvider} from "@/modules/layout/AuthProvider";
 
 const inter = Inter({
     variable: "--font-inter",
@@ -27,7 +28,9 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={`${inter.variable} ${unbounded.variable} antialiased`}>
-        {children}
+        <AuthProvider>
+          {children}
+        </AuthProvider>
         </body>
         </html>
     );

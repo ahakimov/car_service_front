@@ -120,7 +120,7 @@ class AuthService {
     const testToken = this.encodeCredentials(request.email, request.password);
     httpClient.setToken(testToken);
 
-    // Try to get client profile to verify credentials
+    // Try to get dashboard profile to verify credentials
     const profileResponse = await httpClient.get<Client>(
       API_CONFIG.ENDPOINTS.CLIENTS.PROFILE
     );
