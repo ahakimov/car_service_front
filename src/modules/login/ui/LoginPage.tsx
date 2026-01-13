@@ -85,7 +85,7 @@ export default function LoginPage() {
         try {
             // Use the auth service to login
             //const response = await login(formData.email, formData.password);
-            const result = await post(API_CONFIG.ENDPOINTS.AUTH.LOGIN, credentials);
+            const result = await login(credentials.email, credentials.password);
             console.log('Login response:', result);
             if (result.error) {
                 // Handle authentication error
@@ -96,7 +96,9 @@ export default function LoginPage() {
             // Login successful
             if (result.data) {
                 console.log('Login successful:', result.data);
-
+                const token = btoa(`${credentials.email}:${credentials.password}`);
+                console.log('Token:', token);
+                setToken(token);
                 // Redirect to dashboard or home
                 router.push('/dashboard');
             }
