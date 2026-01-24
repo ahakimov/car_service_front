@@ -10,13 +10,7 @@ class HttpClient {
   private baseUrl: string;
 
   private constructor() {
-    // Only access config if we're on client side
-    if (typeof window === "undefined") {
-      // Server-side: use environment variable or fallback
-      this.baseUrl = process.env.NEXT_PUBLIC_API_URL || "http://57.128.249.133:9341";
-    } else {
-      this.baseUrl = API_CONFIG.BASE_URL;
-    }
+    this.baseUrl = API_CONFIG.BASE_URL;
   }
 
   /**

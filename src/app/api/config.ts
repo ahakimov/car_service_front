@@ -3,7 +3,12 @@
 // To use a different backend, update NEXT_PUBLIC_API_URL in .env.local
 
 export const API_CONFIG = {
-  BASE_URL: process.env.NEXT_PUBLIC_API_URL || "http://57.128.249.133:9341",
+  BASE_URL: (() => {
+    if (!process.env.NEXT_PUBLIC_API_URL) {
+      throw new Error("NEXT_PUBLIC_API_URL is not defined");
+    }
+    return process.env.NEXT_PUBLIC_API_URL;
+  })(),
   ENDPOINTS: {
     // Auth
     AUTH: {
